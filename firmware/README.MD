@@ -136,9 +136,9 @@ esptool --chip esp32c3  --baud 921600 --before default_reset --after hard_reset 
 
 ## GPS positioning is inaccurate
 
-1. Flash [GPSShield example](../examples/GPSShield/GPSShield.ino)
-2. Download [u-center2](https://www.u-blox.com/en/product/u-center)
-3. Connect to the port using the GIF method.
+1. Download [u-center2](https://www.u-blox.com/en/product/u-center)
+2. Flash [GPSShield example](../examples/GPSShield/GPSShield.ino) or Flash [T-Deck_UnitTest_Debug_251222.bin](./T-Deck_UnitTest_Debug_251222.bin)
+3. After the writing is complete, press the reset button to restart the device, and then select the device and baud rate to connect to the software as shown in the image below.
 4. Check the GPS data according to the guide below
     ![center2](./images/u-center2.gif)
 5. When the location is locked, Click to activate the map view, The location report from u-center2 is accurate.
