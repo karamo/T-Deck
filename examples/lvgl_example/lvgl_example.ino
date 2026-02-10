@@ -40,8 +40,8 @@ void setBrightness(uint8_t value)
 
 // !!! LVGL !!!
 // !!! LVGL !!!
-// !!! LVGL !!!
-static void disp_flush( lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p )
+// !!! LVGL !!
+void disp_flush( lv_disp_drv_t *disp, const lv_area_t *area, lv_color_t *color_p )
 {
     uint32_t w = ( area->x2 - area->x1 + 1 );
     uint32_t h = ( area->y2 - area->y1 + 1 );
